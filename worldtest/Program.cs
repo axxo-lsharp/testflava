@@ -11,7 +11,14 @@ namespace worldtest
     {
         static void Main(string[] args)
         {
-            Game.PrintChat("What the fuck");
+            Game.OnStart += Game_OnGameLoad;
         }
+        static void Game_OnGameLoad(EventArgs args)
+        {
+            //this happens when injection into game
+            Game.PrintChat("Loaded");
+        }
+
+
     }
 }
