@@ -11,7 +11,7 @@ namespace worldtest
     {
         static void Main(string[] args)
         {
-            Game.PrintChat("What the fuck")
+            Game.PrintChat("What the fuck");
         }
     }
 }
